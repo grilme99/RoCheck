@@ -1,5 +1,5 @@
 /**
- * SECURITY MODULE
+ *  ROCHECK
  *
  * This module is used to validate that a request is really from Roblox.
  * It uses a bot cookie to "fake" a join request to a game and then
