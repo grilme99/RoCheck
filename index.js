@@ -23,10 +23,13 @@ const request = require('request-promise') // Used to make HTTP requests
  * @param {Number} placeId
  * @param {String} jobId
  * @param {String} cookie
- * @return {String} ipAddress
+ * @return {Promise} ipAddress
  * @api public
  */
 module.exports = (placeId, jobId, cookie) => {
+	/**
+	 * Return promise
+	 */
 	return new Promise(async (resolve, reject) => {
 		/**
 		 * Initialize the join request. Receives "joinScriptUrl" which will
