@@ -1,6 +1,6 @@
 {
 	"name": "rocheck",
-	"version": "1.0.0",
+	"version": "1.0.2",
 	"description": "Find the IP of a Roblox game server with just a bot cookie, place id and job id",
 	"main": "index.js",
 	"scripts": {

@@ -23,7 +23,7 @@ const request = require('request-promise') // Used to make HTTP requests
  * @param {Number} placeId
  * @param {String} jobId
  * @param {String} cookie
- * @return {Promise} ipAddress
+ * @return {Promise} ipAddress, game_data
  * @api public
  */
 module.exports = (placeId, jobId, cookie) => {
@@ -80,7 +80,7 @@ module.exports = (placeId, jobId, cookie) => {
 			/**
 			 * Return MachineAddress
 			 */
-			resolve(game_data.MachineAddress)
+			resolve(game_data.MachineAddress, game_data)
 		} else {
 			reject('Error on initial request to Roblox')
 		}
